@@ -121,7 +121,7 @@ section{
 }
 
 .home{
-    min-width: 100vh;
+   
     height: 100%;
     width: 100%;
     display: grid;
@@ -176,12 +176,12 @@ section{
     color: #bdbdbd;
     line-height: 1.6; /*espaciado vertical entre lineas de texto*/
     width: 100%;
+    text-align: justify;
 }
 .info-box{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
     margin: 1rem 0 2rem; /*superior, derecho e inferior*/
 }
 
@@ -199,14 +199,13 @@ section{
 .btn-box{
     display: flex;
     justify-content: space-between;
-    width: 500px;
     height: 45px;
 }
 .btn-box .btn{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 230.44px; /*modificarlo segun el espacio de que ocupan os correos*/
+    width: 150px;
     height: 100%;
     background: var(--hover-color);
     color: var(--bg-color);
@@ -325,10 +324,11 @@ section{
 
 .liquid-shape{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     z-index: -1;
     top: 5%;
+    left: 5%;
 }
 
 .liquid-shape:nth-child(2){
@@ -428,6 +428,9 @@ section{
 
 }
 /*-----------------------------SERVICES SECTION-----------------------------*/
+.btn-box{
+    display: none;
+}
 .main-text{
     width: 100%;
     text-align: center;
@@ -464,6 +467,9 @@ section{
     background: var(--secon-bg-color);
     transition: transform .4s;
     border-radius: 10px;
+}
+.service-box{
+    height: 30rem;
 }
 .service-btn{
     width: auto;
@@ -547,11 +553,11 @@ section{
     animation: html 2s;
 }
 .skill-bar .bar .css{
-    width: 50%;
+    width: 80%;
     animation: css 3s;
 }
 .skill-bar .bar .javascript{
-    width: 30%;
+    width: 50%;
     animation: javascript 4s;
 }
 .skill-bar .bar .java{
@@ -567,7 +573,7 @@ section{
     animation: python 6s;
 }
 .skill-bar .bar .sql{
-    width: 30%;
+    width: 50%;
     animation: sql 7s;
 }
 .skill-bar .bar .ms_office{
@@ -688,12 +694,15 @@ section{
     text-align: center;
     transition: 0.5s;
     padding: 0 2rem;
+    color: black;
+    font-weight: 600;
 }
 .port-box:hover .port-content{
     opacity: 1; 
 }
 .port-box:hover .port-image img{
     transform: scale(1.1);
+    filter: blur(6px)
 }
 
 .port-content h3{
@@ -777,6 +786,36 @@ footer a i{
     font-size: 1rem;
     color: var(--secon-bg-color);
 }
+.referencia{
+    background: none;
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+
+
+/*--------------------------------ANIMACIONES FINALES--------------------------------*/
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 /*--------------------------------keyframes--------------------------------*/
 @keyframes morph {
     0%,
@@ -892,32 +931,26 @@ footer a i{
         --neon-box-shadow: 0 0 .8rem #12f7ff;
         --h2-font:3rem;
     }
-
-
     .home-content{
         margin-top: 5rem;
     }
     .social-icons{
         margin-top: 2rem;
     }
+    .change-text{
+        font-size: 1.1rem;
+    }
 }
-@media(max-width:854px){
+@media(max-width:620px){
+.change-text{
+    font-size: 1rem;
+    font-weight: 600;
+}}
 
-    .home{
-        grid-template-columns: 1fr;
+@media(max-width:720px){
+    .service-box{
+        height: auto;
     }
-    .home-image{
-        margin-bottom: 5rem;
-    }
-    .liquid-shape{
-        position: absolute;
-        width: 80%;
-        height: 80%;
-        z-index: -1;
-        top: 0;
-    }
-}
-@media(max-width:768px){
     #menu-icon{
         display: block;
         transition: all .4s ease;
@@ -927,7 +960,6 @@ footer a i{
     }
     header.sticky{
         background: var(--bg-color);
-        
     }
     .navlist{
         display: flex;
@@ -951,11 +983,53 @@ footer a i{
     .navlist.open{
         top: 100%;
     }
-
+    .home{
+        grid-template-columns: 1fr;
+    }
     .home-image{
         margin-bottom: 5rem;
     }
-   
+    .img-box img{
+        width: 100%;
+        height: 100%;
+    }
+    .liquid-shape{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        z-index: -1;
+        top: 0;
+        left: 18%;   
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+    .fillter-buttons{
+        margin: 2.5rem 0 ;
+    }
+    footer{
+        font-size: .9rem;
+    }
+}
 
+@media(max-width:420px){
+    html{
+        font-size: 80%;
+    }
+    footer{
+        font-size: .6rem;
+    }
+
+    .change-text{
+        font-size: 0.9rem;
+    }
+    .fillter-buttons .btn{
+        font-size: .8rem;
+    }
+
+   /*poner lo del about*/
 
 }
