@@ -10,12 +10,12 @@
 
     </head>
     <body>
-        <!-- Header site-->
+        <!-- HEADER SITE-->
          <header>
             <div class="logo"><span>N</span>atalia.</div>
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <!--<li><a href="#about">About</a></li>-->
                 <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -24,7 +24,7 @@
             <div id="menu-icon" class="bx bx-menu"></div>
          </header>
 
-         <!-----------------------Home section---------------------->
+         <!-----------------------HOME SECTION---------------------->
          <section id="home" class="home">
             <div class="home-content">
                 <h1>Hi! I'm Natalia Valencia</h1>
@@ -46,12 +46,12 @@
                 <div class="info-box">
                     <div class="email-info">
                         <h5>Email :</h5>
-                        <span>nataliavalencia452@gmail.com</span>
+                        <span>nataliavalen</span>
                     </div>
-                    <div class="behance-info">
+                    <!--<div class="behance-info">
                         <h5>Behance :</h5>
-                        <span>nataliavalencia452@gmail.com</span>
-                    </div>
+                        <span>nataliavale</span>
+                    </div>-->
                 </div>
 
                 <div class="btn-box">
@@ -164,8 +164,8 @@
             </div>
          </section>
 
-        <!-----------------------About section---------------------->
-        <section id="about" class="about">
+        <!-----------------------ABOUT SECTION---------------------->
+        <!-- <section id="about" class="about">
             <div class="img-about">
                 <img src="img/nata.png">
                 
@@ -194,7 +194,8 @@
                     <a href="" class="btn">Read More!</a>
                 </div>
             </div>
-        </section>
+        </section> -->
+
         <!-------------------------------SERVICES SECTION------------------------------->
         <section id="services" class="services">
             <div class="main-text">
@@ -271,6 +272,7 @@
                 </div>
             </div>
         </section>
+
         <!-------------------------------SKILLS SECTION------------------------------->
         <section id="skills" class="skills">
             <div class="main-text">
@@ -411,15 +413,15 @@
             </div>
             <div class="container">
                 <div class="fillter-buttons">
-                    <button class="btn">All</button>
-                    <button class="btn">Web app</button>
-                    <button class="btn">Papers</button>
-                    <button class="btn">Data science</button>
-                    <button class="btn">Backend projects</button>
+                    <button class="btn" data-filter="all">All</button>
+                    <button class="btn" data-filter=".web_app">Web app</button>
+                    <button class="btn" data-filter=".papers">Papers</button>
+                    <button class="btn" data-filter=".data_science">Data science</button>
+                    <button class="btn" data-filter=".backend_projects">Backend projects</button>
                 </div>
                 <div class="portfolio-gallery">
 
-                    <div class="port-box">
+                    <div class="port-box mix web_app">
                         <div class="port-image">
                             <img src="img/1.jpg">
                         </div>
@@ -433,12 +435,12 @@
                         </div>
                     </div>
 
-                    <div class="port-box">
+                    <div class="port-box mix web_app">
                         <div class="port-image">
                             <img src="img/2.jpg">
                         </div>
                         <div class="port-content">
-                            <h3>Portfolio lawyer</h3>
+                            <h3>Physics practice</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Id omnis sit exercitationem itaque hic ex eveniet distinctio 
                                 quam aliquid repellendus!
@@ -447,12 +449,12 @@
                         </div>
                     </div>
 
-                    <div class="port-box">
+                    <div class="port-box mix papers">
                         <div class="port-image">
                             <img src="img/3.jpg">
                         </div>
                         <div class="port-content">
-                            <h3>Portfolio lawyer</h3>
+                            <h3>paper Gottingen</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Id omnis sit exercitationem itaque hic ex eveniet distinctio 
                                 quam aliquid repellendus!
@@ -461,12 +463,12 @@
                         </div>
                     </div>
 
-                    <div class="port-box">
+                    <div class="port-box mix papers">
                         <div class="port-image">
                             <img src="img/4.jpg">
                         </div>
                         <div class="port-content">
-                            <h3>Portfolio lawyer</h3>
+                            <h3>Journal EIA</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Id omnis sit exercitationem itaque hic ex eveniet distinctio 
                                 quam aliquid repellendus!
@@ -475,12 +477,12 @@
                         </div>
                     </div>
 
-                    <div class="port-box">
+                    <div class="port-box mix papers">
                         <div class="port-image">
                             <img src="img/5.jpg">
                         </div>
                         <div class="port-content">
-                            <h3>Portfolio lawyer</h3>
+                            <h3>Tesis anestesia</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Id omnis sit exercitationem itaque hic ex eveniet distinctio 
                                 quam aliquid repellendus!
@@ -489,12 +491,26 @@
                         </div>
                     </div>
 
-                    <div class="port-box">
+                    <div class="port-box mix data_science">
                         <div class="port-image">
                             <img src="img/6.jpg">
                         </div>
                         <div class="port-content">
-                            <h3>Portfolio lawyer</h3>
+                            <h3>Power BI</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Id omnis sit exercitationem itaque hic ex eveniet distinctio 
+                                quam aliquid repellendus!
+                            </p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="port-box mix data_science">
+                        <div class="port-image">
+                            <img src="img/6.jpg">
+                        </div>
+                        <div class="port-content">
+                            <h3>Negocios_Python</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                                 Id omnis sit exercitationem itaque hic ex eveniet distinctio 
                                 quam aliquid repellendus!
@@ -506,6 +522,31 @@
                 </div>
             </div>
         </section>
+
+        <!-------------------------------CONTACT SECTION------------------------------->
+        <section id="contact" class="contact">
+            <div class="main-text">
+                <span>Ask me question</span>
+                <h2>Contact Me</h2>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <input type="text" placeholder="Your Addres">
+                <input type="number" placeholder="Phone Number">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <div class="btn-box formBtn">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <!-------------------------------FOOTER SECTION------------------------------->
+        <footer>
+            <p>Copyright &copy; 2023 by ParsCoder || All right Reserved.</p>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </footer>
+        <script src="mixitup.min.js"></script>
         <script src="script.js"></script>
 
     </body>
